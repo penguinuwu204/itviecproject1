@@ -1,22 +1,23 @@
-# Core
+# app dependencies
 streamlit==1.46.1
+
+# numeric + ML 
 numpy==1.23.5
 scipy==1.9.3
 pandas==2.2.5
-
-# Deep translator & NLP
-deep-translator==1.11.4
-regex==2022.10.31
-spacy==3.5.0
-# spaCy model
-en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.5.0/en_core_web_sm-3.5.0-py3-none-any.whl
-wordcloud==1.8.2.2
-gensim==4.4.0
-
-# Machine Learning
 scikit-learn==1.2.2
 imbalanced-learn==0.10.1
 xgboost==1.7.6
 
-# (Optional) pyspark – chỉ nếu bạn thực sự deploy Spark jobs
+# NLP + translation
+deep-translator==1.11.4
+regex==2022.10.31
+spacy==3.5.0
+en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.5.0/en_core_web_sm-3.5.0-py3-none-any.whl
+
+# text processing
+gensim==4.4.0
+wordcloud==1.8.2.2
+
+# OPTIONAL: nếu bạn KHÔNG cần pyspark trên Cloud, xóa dòng này
 pyspark==3.4.1
