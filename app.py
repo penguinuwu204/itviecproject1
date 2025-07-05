@@ -9,10 +9,10 @@ import matplotlib.pyplot as plt
 from wordcloud import WordCloud
 from deep_translator import GoogleTranslator
 import spacy, spacy.cli
-spacy.cli.download("en_core_web_sm")
-nlp = spacy.load("en_core_web_sm", disable=["parser","ner"])
 import spacy
 import scipy.sparse as sp
+import spacy
+from spacy.cli import download as spacy_download
 
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
@@ -68,7 +68,11 @@ st.markdown("""
 @st.cache_data
 def init_text_tools():
     tr = GoogleTranslator(source="auto", target="en")
-    nlp = spacy.load("en_core_web_sm", disable=["parser","ner"])
+    try:
+        nlp = spacy.load("en_core_web_sm", disable=["parser","ner"])
+    except OSError:
+        spacy_download("en_core_web_sm")
+        nlp = spacy.load("en_core_web_sm", disable=["parser","ner"])
     sw  = spacy.lang.en.stop_words.STOP_WORDS
     vn  = re.compile(r"[àáảãạăắằẳẵặâấầẩẫậđèéẻẽẹêếềểễệìíỉĩịòóỏõọôốồổỗơớờởỡợùúủũụưứừửữựỳỷỹự]", re.IGNORECASE)
     return tr, nlp, sw, vn
