@@ -1,6 +1,6 @@
-ITViec Explorer
+# ITViec Explorer
 
-🔍 ITViec Explorer** là ứng dụng web được xây dựng bằng Streamlit, phục vụ cho việc phân tích đánh giá công ty IT thu thập từ ITViec.com.  
+**🔍 ITViec Explorer** là ứng dụng web được xây dựng bằng Streamlit, phục vụ cho việc phân tích đánh giá công ty IT thu thập từ ITViec.com.  
 
 ## 🚀 Tính năng chính
 
