@@ -12,3 +12,6 @@ imbalanced-learn
 xgboost
 gensim
 pyspark
+
+# thêm model en_core_web_sm dưới dạng pip-installable package
+en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.5.0/en_core_web_sm-3.5.0.tar.gz
