@@ -8,6 +8,9 @@ import regex, re, unicodedata
 import matplotlib.pyplot as plt
 from wordcloud import WordCloud
 from deep_translator import GoogleTranslator
+import spacy, spacy.cli
+spacy.cli.download("en_core_web_sm")
+nlp = spacy.load("en_core_web_sm", disable=["parser","ner"])
 import spacy
 import scipy.sparse as sp
 
