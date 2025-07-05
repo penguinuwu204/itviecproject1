@@ -13,6 +13,12 @@ import spacy
 import scipy.sparse as sp
 import spacy
 from spacy.cli import download as spacy_download
+import spacy.cli
+try:
+    spacy.load("en_core_web_sm")
+except OSError:
+    spacy.cli.download("en_core_web_sm")
+
 
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
