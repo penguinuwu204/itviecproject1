@@ -57,7 +57,7 @@ regex
 Lưu ý: nếu dùng spaCy, bạn có thể cần tải mô hình tiếng Anh:
 python -m spacy download en_core_web_sm
 
-👥 Nhóm thực hiện
+👥 Nhóm thực hiện:
 Nguyễn Lư Bảo Khang (nbaokhang12@gmail.com)
 Phạm Đức Huy (DucHuyUFM@gmail.com)
 
