@@ -1,6 +1,2 @@
-libatlas-base-dev
 gfortran
-pkg-config
-build-essential
-python3-dev
-openjdk-11-jre-headless   # for PySpark
+libopenblas-dev
