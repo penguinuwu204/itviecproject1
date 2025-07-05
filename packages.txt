@@ -1,1 +1,3 @@
 openjdk-11-jre-headless
+gfortran
+libatlas-base-dev
