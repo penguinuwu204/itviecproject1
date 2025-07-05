@@ -2,14 +2,9 @@ streamlit
 pandas
 numpy
 scipy==1.10.1
-regex
-matplotlib
-wordcloud
-deep-translator
-spacy
-en-core-web-sm
 scikit-learn
 imbalanced-learn
-gensim
 xgboost
-pyspark
+gensim
+spacy
+deep-translator
