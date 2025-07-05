@@ -1,0 +1,14 @@
+streamlit
+pandas
+numpy
+regex
+matplotlib
+wordcloud
+deep-translator
+spacy
+scipy
+scikit-learn
+imbalanced-learn
+xgboost
+gensim
+pyspark
